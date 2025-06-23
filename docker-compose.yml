@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ai-agent-app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_API_KEY=${MODEL_API_KEY}
+      - MODEL_DEPLOYMENT_NAME=${MODEL_DEPLOYMENT_NAME}
+      - MODEL_API_BASE_URL=${MODEL_API_BASE_URL}
+      - REDIS_URL=redis://redis:6379
+      - STORAGE_TYPE=redis
+      - ENABLE_STATE_MANAGEMENT=true
+      - STORE_TOOL_HISTORY=true
+      - MAX_TOOL_ITERATIONS=4
+      - CHAT_HISTORY_LIMIT=5
+      - AGENTS_SERVER_PORT=8000
+      - LOG_LEVEL=info
+    depends_on:
+      - redis
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  redis_data: 
