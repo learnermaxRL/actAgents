@@ -26,7 +26,7 @@ An AI-powered agent service built with FastAPI and modern AI models, featuring a
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd shopping_ai_system
+   cd <repo>
    ```
 
 2. **Install dependencies**
@@ -162,7 +162,7 @@ AGENTS_SERVER_PORT=8000
 ### Project Structure
 
 ```
-shopping_ai_system/
+agents_framework/
 ├── api/                    # API layer
 ├── config/                 # Configuration
 ├── core/                   # Core business logic

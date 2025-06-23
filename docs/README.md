@@ -1,6 +1,6 @@
 # AI Agents Framework Documentation
 
-Welcome to the documentation for the Shopping AI System! This guide will help you understand the architecture, core concepts, and how to create your own custom agents using this framework.
+Welcome to the documentation for the AI Agents Framework This guide will help you understand the architecture, core concepts, and how to create your own custom agents using this framework.
 
 ---
 
@@ -21,7 +21,7 @@ Welcome to the documentation for the Shopping AI System! This guide will help yo
 
 ## Overview
 
-The Shopping AI System is a modular, extensible framework for building AI-powered agents that can handle complex tasks, such as customer service, product recommendations, web search, and more. Agents are built on top of a robust `BaseAgent` class, and can be easily extended with new tools, prompts, and behaviors.
+The AI Agents Framework is a modular, extensible framework for building AI-powered agents that can handle complex tasks, such as customer service, product recommendations, web search, and more. Agents are built on top of a robust `BaseAgent` class, and can be easily extended with new tools, prompts, and behaviors.
 
 ---
 

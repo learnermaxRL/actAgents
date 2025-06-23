@@ -1,6 +1,6 @@
 # Code Organization & Architecture
 
-This document provides a comprehensive overview of the Shopping AI System's code organization, architecture patterns, and how different components interact with each other.
+This document provides a comprehensive overview of the Ai Agent Framework AI System's code organization, architecture patterns, and how different components interact with each other.
 
 ---
 
@@ -21,7 +21,7 @@ This document provides a comprehensive overview of the Shopping AI System's code
 ## Project Structure
 
 ```
-shopping_ai_system/
+ai_agents_framework/
 ├── api/                          # API layer
 │   ├── agent_routes/            # FastAPI routes for agents
 │   └── models.py                # Pydantic models for API
